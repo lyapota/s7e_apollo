@@ -409,11 +409,15 @@ LINUXINCLUDE    := \
 KBUILD_CPPFLAGS := -D__KERNEL__
 
 KBUILD_CFLAGS   := -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs \
-		   -fno-strict-aliasing -fno-common \
-		   -Werror-implicit-function-declaration \
-		   -Wno-format-security -Wno-logical-not-parentheses \
-		   -mtune=cortex-a72.cortex-a53 -Wno-misleading-indentation\
-		   -std=gnu89
+		   -fno-strict-aliasing -fno-common -fno-delete-null-pointer-checks -Wno-unused-value -Wno-maybe-uninitialized \
+		   -Werror-implicit-function-declaration -Wno-uninitialized \
+		   -Wno-error=unused-variable -Wno-error=unused-function \
+		   -Wno-discarded-array-qualifiers -Wno-logical-not-parentheses -Wno-array-bounds -Wno-switch -Wno-unused-variable \
+		   -Wno-switch-bool \
+		   -Wno-switch-enum \
+		   -Wno-format-security \
+		   -std=gnu89 \
+		   -Wno-memset-transposed-args
 
 KBUILD_AFLAGS_KERNEL :=
 KBUILD_CFLAGS_KERNEL :=
