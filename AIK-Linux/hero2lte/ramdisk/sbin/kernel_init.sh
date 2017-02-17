@@ -6,6 +6,9 @@ log_print() {
   echo "($MODE) $1" >> /dev/.launch_kinit.log
 }
 
+/sbin/resetprop -v -n ro.boot.warranty_bit 0
+/sbin/resetprop -v -n ro.warranty_bit 0
+
 if [ -f "/dev/.kinit" ]; then
   log_print "next start"
   exit;
@@ -52,10 +55,10 @@ run() {
         su -c ${FILE}
         resSU=$?
         if [ $resSU == 0 ]; then
-            echo "SU run init.d/${FILE}" >> /dev/.kinit;
+            echo "SU run ${FILE}" >> /dev/.kinit;
         else
             /system/bin/sh ${FILE}
-            echo "SH run init.d/${FILE}" >> /dev/.kinit;
+            echo "SH run ${FILE}" >> /dev/.kinit;
         fi;
 
     done;

@@ -1,6 +1,6 @@
 #!/sbin/sh
 # ========================================
-# script Apollo ROM
+# script Apollo kernels
 # ========================================
 # Created by lyapota
 
