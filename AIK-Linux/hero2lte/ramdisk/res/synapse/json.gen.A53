@@ -58,16 +58,6 @@ cat << CTAG
 	{ SSpacer:{
 		height:1
 	}},
-	{ SPane:{
-		title:"HPM Voltage Control",
-	}},
-	{ SSeekBar:{
-		title:"Apollo HPM voltage margin",
-		description:"Set the maximum voltage margin the APM undervolts down to.\n",
-		default:$(cat /sys/kernel/debug/mailbox/apl_cl_margin),
-		action:"generic /sys/kernel/debug/mailbox/apl_cl_margin",
-		unit:" µV", weight:6250.0, min:0, step:1, max:10
-	}},
 	{ SSpacer:{
 		height:1
 	}},
