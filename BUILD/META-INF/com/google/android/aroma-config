@@ -96,10 +96,10 @@
 #
 
 ini_set("rom_name",             "Apollo");
-ini_set("rom_version",          "1.6.1");
+ini_set("rom_version",          "1.6.2");
 ini_set("rom_author",           "lyapota");
 ini_set("rom_device",           "Samsung SM-G935F/G930F");
-ini_set("rom_date",             "24 February 2017");
+ini_set("rom_date",             "04 March 2017");
 
 fontresload( "0", "ttf/DroidSans.ttf", "12" );
 fontresload( "1", "ttf/DroidSans.ttf", "18" );
@@ -239,8 +239,8 @@ endif;
     #------------------+-----------------+---------------#
     #--------[ Initial Value = 0: Unselected, 1: Selected, 2: Group Item, 3: Not Visible ]---------#
 
-    "No root",                  "stock patched kernel without root",  0, #-- selected.0 = 1
-    "Magisk + Superuser",    "patched kernel rooted by Superuser",    1, #-- selected.0 = 2
+    "No root",                  "patched kernel without root",        0, #-- selected.0 = 1
+    "Magisk",                   "patched kernel rooted by Magisk",    1, #-- selected.0 = 2
     "SuperSU",                  "patched kernel rooted by SuperSU",   0 #-- selected.0 = 3
 
   );

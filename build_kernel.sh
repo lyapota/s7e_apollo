@@ -30,7 +30,7 @@ BUILD_JOB_NUMBER=`grep processor /proc/cpuinfo|wc -l`
 
 export PATH=$(pwd)/bin:$PATH
 
-KERNEL_VERSION="1.6.1"
+KERNEL_VERSION="1.6.2"
 KERNEL_NAME="-apollo"
 export LOCALVERSION=${KERNEL_NAME}-v${KERNEL_VERSION}
 

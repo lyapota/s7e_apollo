@@ -15,8 +15,3 @@ cd /tmp
 
 #Remove SEANDROID ENFORCING Message
 echo -n "SEANDROIDENFORCE" >> boot.img
-
-echo "patch build.prop"
-/tmp/busybox sed -i /timaversion/d /system/build.prop
-/tmp/busybox sed -i /security.mdpp.mass/d /system/build.prop
-/tmp/busybox sed -i /ro.hardware.keystore/d /system/build.prop
