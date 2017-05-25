@@ -1,4 +1,6 @@
-#!/sbin/busybox sh
+#!/system/bin/sh
+
+BB=busybox;
 
 cat << CTAG
 {
@@ -112,9 +114,6 @@ cat << CTAG
 		style:italic,
 		action:"live battvoltnow"
 	}},
-    ]
-}
-CTAG
     ]
 }
 CTAG
