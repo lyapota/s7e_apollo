@@ -9,7 +9,7 @@
  * published by the Free Software Foundation.
 */
 
-#include "exynos8890-herolte_battery.dtsi"
+#include "exynos8890-hero2lte_battery.dtsi"
 / {
 	pinctrl@10580000 {
 		wpc_det: wpc-det {
@@ -25,15 +25,8 @@
 		};
 	};
 
-	battery {
-		battery,fast_charging_current = <1900 450 450 1900 800 1200 1000 460 1200 450 1900 1900 1900 1600 1900 450 450 400 700 1300 300 1000 1500 450 1900 1900 1000 1900 80 1800 1000 1400 450 1000 1900 1900 1900 1900>;
-	};
-
 	max77854-fuelgauge {
-		fuelgauge,qrtable20 = <0x2080>;
-		fuelgauge,qrtable30 = <0x1A03>;
-		fuelgauge,rcomp0 = <0x40>;
-		fuelgauge,rcomp_charging = <0x40>;
-		fuelgauge,capacity = <0x0EA8>;
+		fuelgauge,capacity = <0x0DAF>;
+		fuelgauge,fg_resistor = <2>;
 	};
 };
